@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCAG Knowledge Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <a href="learnmore.html" class="btn">Learn More</a>
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">Web Accessibility Quiz</h1>
+        <p>Test your knowledge of WCAG (Web Content Accessibility Guidelines)</p>
+        <a href="#quiz-container" class="skip-link">Skip to quiz</a>
+    </header>
+
+    <main>
+        <div id="quiz-container" role="main" aria-labelledby="main-heading">
+            <div id="start-screen" class="quiz-screen">
+                <h2>Welcome to the Accessibility Quiz!</h2>
+                <p>This quiz contains 10 questions about web accessibility best practices.</p>
+                <button id="start-btn" class="btn">Start Quiz</button>
+            </div>
+
+            <div id="quiz-screen" class="quiz-screen hidden">
+                <div class="quiz-header">
+                    <!-- Progress Bar -->
+                    <div id="progress-bar-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <!-- Progress Text -->
+                    <div id="progress" aria-live="polite">Question 1 of 10</div>
+                    <!-- Timer -->
+                    <div id="timer" aria-live="polite">Time remaining: 5:00</div>
+                </div>
+                
+                <div id="question-container">
+                    <h2 id="question-text"></h2>
+                    <div id="options-container" role="radiogroup" aria-labelledby="question-text"></div>
+                </div>
+
+                <div class="quiz-footer">
+                    <button id="prev-btn" class="btn" disabled>Previous</button>
+                    <button id="next-btn" class="btn">Next</button>
+                    <button id="submit-btn" class="btn hidden">Submit Quiz</button>
+                </div>
+            </div>
+
+            <div id="results-screen" class="quiz-screen hidden">
+                <h2>Quiz Results</h2>
+                <div id="score-container" aria-live="polite"></div>
+                <div id="feedback-container"></div>
+                <button id="restart-btn" class="btn">Take Quiz Again</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created for SI 339 Final Project</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
