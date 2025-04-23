@@ -1,14 +1,12 @@
-/* Base Styles */
 :root {
     --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+    --secondary-color: #2a7bbd; 
     --accent-color: #e74c3c;
     --light-color: #ecf0f1;
     --dark-color: #2c3e50;
     --success-color: #27ae60;
     --warning-color: #f39c12;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -271,13 +269,13 @@ body.dark-mode .option:hover {
 
 /* Link Hover Effects */
 a {
-    color: var(--secondary-color);
+    color: #0056b3; /* Darker blue for better contrast */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: #003d80; /* Even darker blue for hover */
     text-decoration: underline;
 }
 
