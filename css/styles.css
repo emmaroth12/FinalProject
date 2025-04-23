@@ -21,7 +21,7 @@ body {
     padding: 20px;
 }
 
-/* Skip Link */
+
 .skip-link {
     position: absolute;
     left: -10000px;
@@ -40,7 +40,7 @@ body {
     color: white;
 }
 
-/* Quiz Container */
+
 #quiz-container {
     max-width: 800px;
     margin: 30px auto;
@@ -58,7 +58,7 @@ body {
     display: none;
 }
 
-/* Quiz Header */
+
 .quiz-header {
     display: flex;
     justify-content: space-between;
@@ -67,14 +67,14 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-/* Question Styles */
+
 #question-text {
     margin-bottom: 20px;
     font-size: 1.2rem;
     color: var(--primary-color);
 }
 
-/* Options Styles */
+
 #options-container {
     display: flex;
     flex-direction: column;
@@ -114,11 +114,11 @@ body {
     border-color: var(--accent-color);
 }
 
-/* Button Styles */
+
 .btn {
     padding: 10px 20px;
-    background: var(--secondary-color);
-    color: white;
+    background: #c0392b; 
+    color: #ffffff; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -127,7 +127,7 @@ body {
 }
 
 .btn:hover {
-    background: #2980b9;
+    background: #a93226; 
 }
 
 .btn:focus {
@@ -140,14 +140,14 @@ body {
     cursor: not-allowed;
 }
 
-/* Quiz Footer */
+
 .quiz-footer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-/* Results Screen */
+
 #results-screen {
     text-align: center;
     padding: 20px;
@@ -221,7 +221,7 @@ body {
     background: #2980b9;
 }
 
-/* Progress Bar */
+
 #progress-bar-container {
     width: 100%;
     background: #ddd;
@@ -238,7 +238,7 @@ body {
     transition: width 0.3s ease-in-out;
 }
 
-/* Dark Mode */
+
 body.dark-mode {
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -250,11 +250,12 @@ body.dark-mode #quiz-container {
 }
 
 body.dark-mode .btn {
-    background: var(--accent-color);
+    background: #a93226; 
+    color: #ffffff; 
 }
 
 body.dark-mode .btn:hover {
-    background: #c0392b;
+    background: #922b21; 
 }
 
 body.dark-mode .option {
@@ -267,19 +268,16 @@ body.dark-mode .option:hover {
     background: #34495e;
 }
 
-/* Link Hover Effects */
-a {
-    color: #0056b3; /* Darker blue for better contrast */
-    text-decoration: none;
-    transition: color 0.3s;
+body.dark-mode a {
+    color: #63B8FF; 
 }
 
-a:hover {
-    color: #003d80; /* Even darker blue for hover */
-    text-decoration: underline;
+body.dark-mode a:hover {
+    color: #4AA3FF; 
 }
 
-/* Fade-In Animation */
+
+
 .fade-in {
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -293,13 +291,13 @@ a:hover {
     }
 }
 
-/* Timer Warning */
+
 #timer.warning {
     color: var(--accent-color);
     font-weight: bold;
 }
 
-/* Button Loading State */
+
 .btn.loading {
     position: relative;
     pointer-events: none;
@@ -329,7 +327,7 @@ a:hover {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     body {
         padding: 10px;
